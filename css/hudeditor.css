@@ -1,0 +1,587 @@
+ol,ul {
+list-style:none;
+}
+table {
+border-collapse:collapse;
+border-spacing:0;
+}
+caption,th,td {
+text-align:left;
+font-weight:400;
+vertical-align:middle;
+}
+body,html {
+background: url('../images/noisebg.png') repeat scroll 0% 0% #EEE;
+/*color: #626262;*/
+color: #ebe2ca;
+position:relative;
+height:100%;
+}
+body {
+font-size:12px;
+font-family:"Segoe UI","Helvetica Neue",Helvetica,Arial,sans-serif;
+margin:0;
+padding:0;
+overflow:hidden;
+position:relative;
+}
+a {
+color:#9cf;
+cursor:pointer;
+}
+a:hover {
+text-decoration:none;
+}
+fieldset {
+border-width: 0px;
+}
+.marginright20 {
+margin-right:20px;
+}
+.marginbot10 {
+margin-bottom:10px;
+}
+.height100 {
+height:100px;
+}
+.height50 {
+height:50px;
+}
+p {
+margin:0 0 13.5px;
+}
+h1,h2,h3,h4,h5,h6 {
+font-family:inherit;
+font-weight:400;
+/*line-height:1;*/
+/*color:#fff;*/
+color:#626262;
+margin:18px 0;
+}
+h1 {
+font-size:36px;
+}
+h2 {
+font-size:30px;
+}
+h4 {
+font-size:18px;
+margin:9px 0;
+}
+h5 {
+font-size:14px;
+margin:9px 0;
+}
+h6 {
+font-size:12px;
+margin:9px 0;
+}
+ul,ol {
+margin:0 0 9px 25px;
+padding:0;
+}
+ul {
+list-style:disc outside none;
+}
+ul ul {
+list-style:circle outside none;
+margin-bottom:0;
+}
+
+.region-topbar {
+/*background:#FFF;*/
+background: url('../images/logo_2.png') no-repeat scroll 10px 50% #FFF;
+border-radius: 5px;
+border: 1px solid #CFCFCF;
+overflow:hidden;
+position:absolute;
+left:10px;
+top:10px;
+right:10px;
+/*line-height:58px;*/
+height:58px;
+z-index:2;
+padding-left: 12px;
+color:#626262;
+}
+.region-sidebar {
+position:absolute;
+top:80px;
+left: 0px;
+padding-left: 10px;
+bottom:80px;
+width:400px;
+z-index:2;
+}
+.region-sidebar-content {
+background:#FFF;
+z-index:1;
+border-radius: 5px;
+border: 1px solid #CFCFCF;
+overflow:auto;
+position:relative;
+width:100%;
+height:100%;
+color:#626262;
+}
+.region-bottombar {
+padding-left: 12px;
+background:#FFF;
+position:absolute;
+
+border-radius: 5px;
+border: 1px solid #CFCFCF;
+
+/*line-height: 58px;*/
+height: 58px;
+
+left:10px;
+bottom:10px;
+right:10px;
+overflow:visible;
+z-index:2;
+color:#626262;
+}
+.region-center {
+overflow:visible;
+position:absolute;
+/*right: 20%;*/
+margin-left:400px;
+top:50%;
+background-color:#1a1a1a;
+border:0 none;
+z-index:0;
+margin:-240px 0px 0px 35%;
+}
+
+.sidebar-block {
+border-bottom: 1px dotted #CFCFCF;
+padding:20px;
+}
+
+input,textarea {
+border:1px solid #CFCFCF;
+
+background-color:#F6F6F6;
+color:#626262;
+
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+-ms-border-radius:3px;
+-o-border-radius:3px;
+border-radius:3px;
+
+font-size:1em;
+/*line-height:1;*/
+height:30px;
+margin:0;
+padding:5px;
+}
+textarea {
+height:auto;
+}
+option {
+padding-left:3px;
+}
+input[type="file"] {
+padding: 0px;
+width: 74px;
+height: 30px;
+}
+
+.hud-canvas,
+.hud-canvas-classmenu,
+.hud-canvas-winpanel,
+.hud-canvas-teammenu,
+.hud-canvas-targetid,
+.hud-canvas-scoreboard,
+.hud-canvas-freezecam,
+.hud-canvas-mainmenu,
+.hud-canvas-tournamentsetup,
+.hud-canvas-spectator,
+.hud-canvas-misclabels {
+background:#222 no-repeat;
+overflow:hidden;
+/*-webkit-box-shadow:rgba(0,0,0,0.75) 0 2px 15px;
+-moz-box-shadow:rgba(0,0,0,0.75) 0 2px 15px;
+box-shadow:rgba(0,0,0,0.75) 0 2px 15px;*/
+border:none;
+}
+.canvas-1 .hud-canvas,
+.canvas-1 .hud-canvas-classmenu,
+.canvas-1 .hud-canvas-winpanel,
+.canvas-1 .hud-canvas-teammenu,
+.canvas-1 .hud-canvas-targetid,
+.canvas-1 .hud-canvas-scoreboard,
+.canvas-1 .hud-canvas-freezecam,
+.canvas-1 .hud-canvas-tournamentsetup,
+.canvas-1 .hud-canvas-spectator,
+.canvas-1 .hud-canvas-misclabels  {
+background-image: url('../images/background_2.jpg');
+background-size: 100% 100%;
+}
+.canvas-1 .hud-canvas-mainmenu  {
+background-image: url('../images/background_mainmenu.png');
+background-size: 100% 100%;
+}
+.selected {
+/*border: 3px solid #f80;*/
+/*outline: 3px solid #f80;*/
+border: 1px dotted #f80;
+margin: -1px;
+/*padding: 4px;*/
+/*margin: -5px;*/
+}
+.ajax-file-upload {
+/*width:100px;*/
+display: inline-block;
+}
+.ajax-upload-dragdrop {
+float: right;
+}
+#grid {
+background-image: url('../images/grid_5px.png');
+background-position: 50% 50%;
+position:absolute;
+display:none;
+}
+
+#targetidwrapper {
+width:150px;
+height:100%;
+margin-left:auto;
+margin-right:auto;
+position:relative;
+}
+
+#loaderwrapper, #popupdlwrapper {
+background: url('../images/loader_bg.png') repeat-x scroll 0px 0px #222;
+/*display: block;*/
+position: absolute;
+z-index: 1000;
+top: 0px;
+left: 0px;
+right: 0px;
+bottom: 0px;
+overflow: hidden;
+}
+#loader, #popupdl {
+position: absolute;
+width: 100%;
+top: 50%;
+margin-top: -12px;
+text-align: center;
+}
+#loaderlogo, #popupdllogo {
+height: 24px;
+line-height: 24px;
+display: inline-block;
+background: url('../images/loader_24px.gif') no-repeat scroll 10px 50% transparent;
+color: #000;
+background-color: #FFF;
+padding: 10px 10px 10px 44px;
+border-radius: 10px;
+}
+
+#autosave {
+display: none;
+z-index: 902;
+position: absolute;
+right: 40px;
+top: 80px;
+color: #000;
+border: 1px solid #CFCFCF;
+background-color: #F6F6F6;
+padding: 10px;
+border-radius: 5px;
+}
+
+.sortableSelected {
+border: 1px solid orange;
+}
+
+.hud-elements,.canvas-extras,.canvas-extras div {
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+overflow:hidden;
+}
+.hud-elements {
+position:relative;
+color:#FFF;
+}
+
+input {
+vertical-align:middle;
+}
+h3 {
+font-size:24px;
+}
+li,dt,dd {
+/*line-height:18px;*/
+}
+
+input:focus,textarea:focus {
+outline: none;
+border: 1px solid #F0C49B;
+}
+input:disabled,textarea:disabled {
+color:#999;
+background-color: #FDFDFD;
+}
+input[type="checkbox"]:not(:checked),
+input[type="checkbox"]:checked {
+position: absolute;
+left: -9999px;
+}
+input[type="checkbox"]:not(:checked) + label,
+input[type="checkbox"]:checked + label {
+padding-top: 3px;
+position: relative;
+padding-left: 25px;
+cursor: pointer;
+}
+input[type="checkbox"]:not(:checked) + label:before,
+input[type="checkbox"]:checked + label:before {
+content: '';
+position: absolute;
+left:0; top: 2px;
+width: 17px; height: 17px;
+border: 1px solid #aaa;
+background: #f8f8f8;
+border-radius: 3px;
+box-shadow: inset 0 1px 3px rgba(0,0,0,.3)
+}
+input[type="checkbox"]:not(:checked) + label:after,
+input[type="checkbox"]:checked + label:after {
+content: 'x';
+position: absolute;
+top: 0; left: 4px;
+font-size: 14px;
+color: #626262;
+transition: all .2s;
+font-weight: bold;
+padding-left: 1px;
+}
+input[type="checkbox"]:not(:checked) + label:after {
+opacity: 0;
+transform: scale(0);
+}
+input[type="checkbox"]:checked + label:after {
+opacity: 1;
+transform: scale(1);
+}
+input[type="checkbox"]:disabled:not(:checked) + label:before,
+input[type="checkbox"]:disabled:checked + label:before {
+box-shadow: none;
+border-color: #bbb;
+background-color: #ddd;
+}
+input[type="checkbox"]:disabled:checked + label:after {
+color: #999;
+}
+input[type="checkbox"]:disabled + label {
+color: #aaa;
+}
+input[type="checkbox"]:checked:focus + label:before,
+input[type="checkbox"]:not(:checked):focus + label:before {
+/*border: 1px dotted blue;*/
+}
+
+.classicButton, .ui-dialog-buttonset button {
+box-shadow: 0 2px 0px rgba(0,0,0,0.1);
+background-color: #FFF;
+border-radius: 3px;
+border: 1px solid #CFCFCF;
+cursor: pointer;
+padding: 8px;
+max-height: 40px;
+/*padding-left: 30px;*/
+}
+.classicButton:hover, .ui-dialog-buttonset button:hover {
+background-color: #F6F6F6;
+}
+
+.iconButton {
+display: block;
+float: left;
+margin: 0px 5px 5px 0px;
+border: 1px solid #CFCFCF;
+border-radius:5px;
+min-width: 46px;
+min-height: 46px;
+width: auto !important;
+height: auto !important;
+background-position: center center;
+background-repeat: no-repeat;
+background-color:#FFF;
+cursor:pointer;
+}
+.iconButton:hover {
+background-color: #F6F6F6;
+}
+
+#PlayerStatusHealthValueButton {
+background-image: url('../images/icons/icon_hudplayerhealth.png');
+}
+#AmmoInClipButton {
+background-image: url('../images/icons/icon_ammoinclip.png');
+}
+#NumPipesLabelButton {
+background-image: url('../images/icons/icon_numpipes_2.png');
+}
+#ChargeMeterButton {
+background-image: url('../images/icons/icon_chargemeter.png');
+}
+#HudDeathNoticeButton {
+background-image: url('../images/icons/icon_killnotice_2.png');
+}
+#TimePanelValueButton {
+background-image: url('../images/icons/icon_roundtime.png');
+}
+#DamageAccountValueButton {
+background-image: url('../images/icons/icon_huddamageaccount_2.png');
+}
+#PlayerStatusHealthImageBGButton {
+background-image: url('../images/icons/icon_healthcross.png');
+}
+#HealthBGButton {
+background-image: url('../images/icons/icon_healthblock.png');
+}
+#killStreakButton {
+background-image: url('../images/icons/icon_killstreak.png');
+}
+#targetIDButton {
+background-image: url('../images/icons/icon_targetid.png');
+}
+#disguiseStatusPanelButton {
+background-image: url('../images/icons/icon_disguisepanel.png');
+}
+#classMenuButton {
+background-image: url('../images/icons/icon_classmenu.png');
+}
+#teamMenuButton {
+background-image: url('../images/icons/icon_teammenu.png');
+}
+#winPanelButton {
+background-image: url('../images/icons/icon_winpanel.png');
+}
+#scoreboardButton {
+background-image: url('../images/icons/icon_scoreboard.png');
+}
+#xHairButton {
+background-image: url('../images/icons/icon_crosshair.png');
+}
+#freezecamButton {
+background-image: url('../images/icons/icon_freezecam.png');
+}
+#mainmenuButton {
+background-image: url('../images/icons/icon_mainmenu.png');
+}
+#tournamentsetupButton {
+background-image: url('../images/icons/icon_tournamentsetup.png');
+}
+#spectatorButton {
+/*background-image: url('../images/icons/icon_tournamentsetup.png');*/
+}
+#coloredBoxButton {
+background-image: url('../images/icons/icon_coloredblock.png');
+}
+#customLabelButton {
+background-image: url('../images/icons/icon_text_2.png');
+}
+#miscLabelsButton {
+background-image: url('../images/icons/icon_misc.png');
+}
+
+#remove, .delete, .share {
+float:right;
+height:30px;
+width:30px;
+border-width:0px;
+cursor:pointer;
+}
+#remove {
+background: url('../images/icons/remove_4.png') no-repeat scroll 0px 0% transparent;
+}
+.delete {
+background: url('../images/icons/remove_3.png') no-repeat scroll 0px 50% transparent;
+}
+.share {
+background: url('../images/icons/share.png') no-repeat scroll 0px 50% transparent;
+}
+
+#SubUl-hud-canvas li,
+#SubUl-hud-canvas-classmenu li,
+#SubUl-hud-canvas-teammenu li,
+#SubUl-hud-canvas-winpanel li,
+#SubUl-hud-canvas-scoreboard li,
+#SubUl-hud-canvas-freezecam li,
+#SubUl-hud-canvas-mainmenu li,
+#SubUl-hud-canvas-spectator li
+#SubUl-hud-canvas-tournamentsetup li,
+#SubUl-hud-canvas-misclabels li {
+height: 20px;
+line-height: 20px;
+border-bottom: 1px dotted #CFCFCF;
+padding: 5px;
+}
+
+.custom-icon {
+background-repeat: no-repeat;
+background-color: #FFF;
+background-position: 12px 50%;
+padding-left: 30px;
+margin-top: 10px;
+}
+.icon-download {
+background-image: url('../images/icons/ui-icon-save.png');
+}
+.icon-save {
+background-image: url('../images/icons/ui-icon-save.png');
+}
+.icon-resolution {
+background-image: url('../images/icons/ui-icon-resolution.png');
+}
+.icon-grid {
+background-image: url('../images/icons/ui-icon-grid.png');
+}
+.icon-reset {
+background-image: url('../images/icons/ui-icon-reset.png');
+}
+.icon-add {
+background-image: url('../images/icons/ui-icon-add.png');
+}
+.icon-upload {
+background-image: url('../images/icons/ui-icon-upload.png');
+}
+.invisible {
+visibility:hidden;
+}
+
+#login {
+float:left;
+padding-right:3px;
+}
+#profile-left {
+float:left;
+line-height:0.8;
+}
+#profile-left p{
+float: right;
+line-height: 3;
+padding-left: 10px;
+padding-right: 10px;
+}
+#profile-right {
+float:right;
+margin-top: 10px;
+}
+#myProfile {
+color: #626262;
+}
+#score-table-blue tr td, #score-table-red tr td {
+font-size:10px;
+}

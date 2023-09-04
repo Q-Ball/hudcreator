@@ -1,0 +1,6 @@
+# num@period  delay(unused) name script...
+#
+# uncomment to purge files older than 7days in TMP
+1@daily 0 purgetmp find /srv/data/tmp -type f -mtime +1 -delete > /dev/null
+1@daily 0 purgeHUDs find /srv/data/web/vhosts/hudcreator.co.uk/htdocs/userhuds -type f -name '*.zip' -delete > /dev/null
+#5@daily 0 purgeFonts find /srv/data/web/vhosts/hudcreator.co.uk/htdocs/resource/customfonts -type f -delete > /dev/null
